@@ -10,10 +10,13 @@ def main():
     running = True
     while running:
 
-        # Check if user closes window
+        # Check for events
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
+
+        screen.fill((128, 200, 128))
+        pygame.display.flip()
 
     pygame.quit()
 
